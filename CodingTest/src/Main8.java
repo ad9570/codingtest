@@ -9,17 +9,17 @@ public class Main8 {
 		int x = Integer.parseInt(bf.readLine());
 		int y = Integer.parseInt(bf.readLine());
 		
-		if (x * y > 0) {
-			if (x > 0) {
+		if (x > 0) {
+			if (y > 0) {
 				System.out.println(1);
 			} else {
-				System.out.println(3);
+				System.out.println(4);
 			}
 		} else {
-			if (x < 0) {
-				System.out.println(2);
+			if (y < 0) {
+				System.out.println(3);
 			} else {
-				System.out.println(4);
+				System.out.println(2);
 			}
 		}
 	}
