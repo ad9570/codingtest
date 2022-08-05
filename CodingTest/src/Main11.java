@@ -21,7 +21,7 @@ public class Main11 {
 		
 		for (int i = 0; i < 3; i++) {
 			if (i != list.indexOf(list.get(i))) {
-				prize = ++count <= 1 ? 1000 + list.get(i) * 100 : prize * 10;
+				prize = (++count <= 1) ? (1000 + list.get(i) * 100) : (prize * 10);
 			}
 		}
 		
