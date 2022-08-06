@@ -24,6 +24,7 @@ public class Main9 {
 		}
 		
 		System.out.println(hour + " " + min);
+		bf.close();
 	}
 	
 }

@@ -13,6 +13,7 @@ public class Main7 {
 		} else {
 			System.out.println(0);
 		}
+		bf.close();
 	}
 
 }

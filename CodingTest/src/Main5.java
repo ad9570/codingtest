@@ -21,6 +21,7 @@ public class Main5 {
 		} else {
 			System.out.println("==");
 		}
+		bf.close();
 	}
 	
 }

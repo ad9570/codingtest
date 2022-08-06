@@ -22,6 +22,7 @@ public class Main8 {
 				System.out.println(2);
 			}
 		}
+		bf.close();
 	}
 
 }

@@ -31,6 +31,7 @@ public class Main11 {
 		}
 		
 		System.out.println(prize);
+		bf.close();
 	}
 
 }
