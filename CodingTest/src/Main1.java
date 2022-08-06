@@ -13,11 +13,13 @@ public class Main1 {
 				break;
 			}
 		}
+		
 		System.out.println(A+B);
 		System.out.println(A-B);
 		System.out.println(A*B);
 		System.out.println(A/B);
 		System.out.println(A%B);
+		sc.close();
 	}
     
     public boolean validate(int value) {

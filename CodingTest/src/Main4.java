@@ -22,6 +22,7 @@ public class Main4 {
 		System.out.println(four);
 		System.out.println(five);
 		System.out.println(six);
+		sc.close();
 	}
 	
 	public boolean validate(int value) {

@@ -18,6 +18,7 @@ public class Main3 {
 		System.out.println(((A%C)+(B%C))%C);
 		System.out.println((A*B)%C);
 		System.out.println(((A%C)*(B%C))%C);
+		sc.close();
 	}
 	
 	public boolean validate(int value) {

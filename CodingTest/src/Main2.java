@@ -14,5 +14,6 @@ public class Main2 {
 		}
         
 		System.out.println(y-diff);
+		sc.close();
 	}
 }
