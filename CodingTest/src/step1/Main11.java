@@ -1,10 +1,12 @@
+package step1;
+
 import java.util.Scanner;
 
-public class Main3 {
+public class Main11 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int A, B, C;
-		Main3 m = new Main3();
+		Main11 m = new Main11();
 		while (true) {
 			A=sc.nextInt();
 			B=sc.nextInt();
