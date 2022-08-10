@@ -16,15 +16,14 @@ public class Main11 {
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			
-			if (a + b == 0) {
+			if (a + b == 0)
 				break;
-			}
 			
 			sb.append(a + b);
 			sb.append("\n");
 		}
 		
-		System.out.println();
+		System.out.println(sb);
 	}
 
 }
