@@ -23,9 +23,9 @@ public class Main3 {
 			int a = n % 10;
 			int b = (n / 10) % 10;
 			int c = (n / 100) % 10;
+			
 			if (a - b != b - c)
 				return 0;
-			
 			n /= 10;
 		}
 		
