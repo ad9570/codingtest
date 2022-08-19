@@ -19,18 +19,16 @@ public class Main3 {
 	}
 	
 	public int arithmetic(int n) {
-		int result = 1;
-		
 		while (n >= 100) {
 			int a = n % 10;
 			int b = (n / 10) % 10;
 			int c = (n / 100) % 10;
 			if (a - b != b - c)
-				result = 0;
+				return 0;
 			n /= 10;
 		}
 		
-		return result;
+		return 1;
 	}
 
 }
