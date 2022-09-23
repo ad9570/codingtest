@@ -20,14 +20,12 @@ public class Main1 {
 			if (number == 1 || (number % 2 == 0 && number != 2))
 				continue;
 			
-			if (number % 6 == 1 || number % 6 == 5) {
-				for (int j = 3; j <= Math.sqrt(number); j += 2) {
-					if (number % j == 0)
-						continue primeTest;
-				}
-				
-				prime++;
+			for (int j = 3; j <= Math.sqrt(number); j += 2) {
+				if (number % j == 0)
+					continue primeTest;
 			}
+			
+			prime++;
 		}
 		
 		System.out.println(prime);
