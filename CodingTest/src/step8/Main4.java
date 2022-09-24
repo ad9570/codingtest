@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main4 {
+	
+	static boolean[] notPrime;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,22 +16,24 @@ public class Main4 {
 		int max = Integer.parseInt(st.nextToken());
 		StringBuilder sb = new StringBuilder();
 		
-		if (min < 3) {
-			min = 3;
-			sb.append(2).append("\n");
-		}
+		notPrime = new boolean[max + 1];
+		setPrime(max);
 		
-		primeTest:
-		for (int i = (min % 2 == 0 ? min + 1 : min) ; i <= max; i += 2) {
-			for (int j = 3; j <= Math.sqrt(i); j += 2) {
-				if (i % j == 0)
-					continue primeTest;
-			}
-			
-			sb.append(i).append("\n");
+		for (int i = (min == 1 ? 2 : min); i <= max; i++) {
+			if (!notPrime[i])
+				sb.append(i).append("\n");
 		}
 		
 		System.out.println(sb);
+	}
+	
+	static void setPrime(int max) {
+		for (int i = 2; i <= Math.sqrt(max); i++) {
+			if (notPrime[i])
+				continue;
+			for (int j = i * i; j <= max; j += i)
+				notPrime[j] = true;
+		}
 	}
 	
 }
