@@ -17,5 +17,9 @@ public class Harshad {
         return x % digitSum(x) == 0;
     }
 	
+	public static void main(String[] args) {
+		Harshad h = new Harshad();
+		System.out.println(h.solution(12));
+	}
 	
 }
