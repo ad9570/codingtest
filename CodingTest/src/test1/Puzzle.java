@@ -8,7 +8,8 @@ public class Puzzle {
 		int cnt = 0;
 		StringBuilder sb = new StringBuilder(t);
 		System.out.println(sb);
-		Arrays.sort(strs, (String s1, String s2) -> s1.length() - s2.length());
+		Arrays.sort(strs, (String s1, String s2) -> s2.length() - s1.length());
+		System.out.println(Arrays.toString(strs));
 		
 		for (int i = 0; i < strs.length; i++) {
 			int contains = sb.indexOf(strs[i]);

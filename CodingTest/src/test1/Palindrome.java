@@ -27,6 +27,8 @@ public class Palindrome {
 	public static void main(String[] args) {
 		System.out.println(solution("abcdcba"));
 		System.out.println(solution("abacde"));
+		System.out.println(solution("dcababa"));
+		System.out.println(solution("a"));
 	}
 	
 }
